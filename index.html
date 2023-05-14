@@ -1,0 +1,47 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        
+    </head>
+    <body>
+        <header>
+            <img class="logoA" src="imagenes/Logo.png" alt="Logo Alura">
+            <h1 class="titulo-principal">Encriptador de texto</h1>
+        </header>
+        <main>
+            <section class="caja-entrada">
+                <textarea class="texto-entrada" placeholder="Ingrese el texto aquí" ></textarea>
+                <div class="caja-aviso">
+                    <img class="img-aviso" src="imagenes/Vector.png" alt="aviso">
+                    <h5 class="aviso">Solo letras minúsculas y sin acentos</h5>
+                </div>
+                <input type="button" class="boton-encriptar" value="Encriptar">
+                <input type="button" class="boton-desencriptar" value="Desencriptar">
+            </section>
+            <section class="caja-salida">
+                <div class="imagen-munieco">
+                    <img src="imagenes/Muñeco.png" alt="imagen - munieco">
+                </div>
+                <div class="texto-munieco">
+                    <h1 class="titulo-munieco">Ningún mensaje fue encontrado</h1>
+                    <p class="parrafo-munieco">Ingresa el texto que deseas encriptar o desencriptar</p>  
+                </div>
+                <div class="texto-salida">
+                    <h3 class="titulo-encriptado" >Mensaje encriptado:</h3>
+                    <textarea class="texto-desencriptado"></textarea>
+                </div>
+                    <!--<input type="button" class="boton-copiar" value="Copiar" onclick="copiar()" >-->
+                    <button class="boton-copiar" onclick="copiar()">Copiar texto</button>
+                </div>
+            </section>
+        </main>
+        <footer>
+            <p>Desafio 1: Encriptador -  Alura 2023</p>
+            <p>Enzo Daniel Pastrana</p>
+        </footer>
+        <script src="codigo.js"></script>
+    </body>
+</html>
